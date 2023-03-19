@@ -24,8 +24,9 @@ public class login extends AppCompatActivity {
     }
 
     public void daftar(View view) {
-        Intent intent = new Intent(this,home.class);
-        intent.putExtra("NAMA", user.getText().toString());
-        startActivity(intent);
+        String value= user.getText().toString();
+        Intent i = new Intent(this, home.class);
+        i.putExtra("key",value);
+        startActivity(i);
     }
 }

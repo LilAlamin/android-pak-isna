@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".home">
 
     <TextView
         android:id="@+id/hasil"
-        android:layout_width="121dp"
-        android:layout_height="36dp"
+        android:layout_width="360dp"
+        android:layout_height="33dp"
         android:text="TextView"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
         android:textSize="24sp"
+        android:drawableLeft="@drawable/baseline_people_alt_24"
+        android:drawablePadding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,9 +17,15 @@ public class home extends AppCompatActivity {
         hasil = findViewById(R.id.hasil);
 
         Intent intent = getIntent();
-        if (intent.hasExtra("NAMA")){
-            String text=intent.getStringExtra("NAMA");
-            hasil.append("Selamat"+" "+text+ ", anda sudah Terdaftar dengan data:\n");
+        Bundle extras = getIntent().getExtras();
+        if (intent.hasExtra("key")){
+
+            if (extras != null) {
+                String text = extras.getString("key");
+                //The key argument here must match that used in the other activity
+                hasil.setText("Assalamualaikum"+" "+text+ ",");
+            }
+
         }
     }
 }
